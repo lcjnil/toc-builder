@@ -147,6 +147,14 @@ class App extends Component {
       points += credit[0]
     }
 
+    if (name === '心智') {
+      points += 4;
+    }
+
+    if (name === '坚毅' || name === '健康') {
+      points += 1;
+    }
+
     return points
   };
 
