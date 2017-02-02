@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "shipit-cli": "^2.0.0",
+    "shipit-deploy": "^2.4.0"
   },
   "dependencies": {
     "bootstrap": "3",
