@@ -242,7 +242,8 @@ class App extends Component {
 
           <div className="big-section">
             <h2>一般能力</h2>
-            调查能力总数: {maxGens} 剩余: {maxGens - _.sum(_.values(generals))}
+            <p>调查能力总数: {maxGens} 剩余: {maxGens - _.sum(_.values(generals))}</p>
+            <p>第二高的能力点数需至少为最高的能力点数的一半</p>
             <section>
               {
                 generalSkills.map(v => (
