@@ -181,8 +181,8 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="wrapper">
-          <div className="big-section section-ins">
+        <div className="row">
+          <div className="col-md-6 col-sm-6 col-xs-12">
             <h2>调查能力</h2>
 
             <p>调查能力总数: {maxIns} 剩余: {maxIns - _.sum(_.values(investigates))}</p>
@@ -191,8 +191,8 @@ class App extends Component {
                 <p>特殊能力: {specialMap[occupationInfo.other.type]} {occupationInfo.other.points} 剩余: {occupationInfo.other.points - specials.length}</p>
             }
 
-            <div className="sections">
-              <section>
+            <div className="row">
+              <section className="col-md-6 col-sm-6 col-xs-6">
                 <h3>学术能力</h3>
                 {
                   academicSkills.map(v => (
@@ -207,7 +207,7 @@ class App extends Component {
                 }
               </section>
 
-              <section>
+              <section className="col-md-6 col-sm-6 col-xs-6">
                 <h3>社交能力</h3>
                 {
                   socialSkills.map(v => (
@@ -222,7 +222,7 @@ class App extends Component {
                 }
               </section>
 
-              <section>
+              <section className="col-md-6 col-sm-6 col-xs-6">
                 <h3>技术能力</h3>
                 {
                   techSkills.map(v => (
@@ -240,7 +240,7 @@ class App extends Component {
           </div>
 
 
-          <div className="big-section">
+          <div className="col-md-6 col-sm-6 col-xs-12">
             <h2>一般能力</h2>
             <p>调查能力总数: {maxGens} 剩余: {maxGens - _.sum(_.values(generals))}</p>
             <p>第二高的能力点数需至少为最高的能力点数的一半</p>

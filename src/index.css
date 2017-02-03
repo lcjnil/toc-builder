@@ -22,19 +22,8 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  display: flex;
-}
-.big-section {
-  flex: 1;
-}
-
-.big-section .sections section {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.glyphicon-star-empty {
-  color: #dedede;
+@media (max-width: 1024px) {
+  .input-label {
+    width: 60px;
+  }
 }
